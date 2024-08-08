@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores pseudo #2</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .voltar {
+            background-color: blueviolet;
+        }
+        div:nth-child(even) {
+            background-color: purple;
+        }
+        div:nth-child(odd) {
+            background-color: plum;
+        }
+        div:hover {
+            background-color: blueviolet;
+        }
+        input:focus {
+            outline: none;
+            border: solid 2px greenyellow;
+        }
+        p::first-letter {
+            font-size: 50px
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Seletores de pseudo-class</h2>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <input type="text">
+
+    <h2>Seletores de pseudo-elementos</h2>
+    <p>consectetur adipisicing elit. Doloremque optio labore architecto harum minima in quas, modi illo soluta mollitia ipsum magnam quo ad nemo aspernatur ea at eligendi consequatur.</p>
+    <p>dolor sit amet, consectetur adipisicing elit. Doloremque optio labore architecto harum minima in quas, modi illo soluta mollitia ipsum magnam quo ad nemo aspernatur ea at eligendi consequatur.</p>
+    <p>sit amet, consectetur adipisicing elit. Doloremque optio labore architecto harum minima in quas, modi illo soluta mollitia ipsum magnam quo ad nemo aspernatur ea at eligendi consequatur.</p>
+</body>
+</html>

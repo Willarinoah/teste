@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo BOX MODEL</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+        }
+        div, h1 {
+            margin-left: 20px;
+            text-align: center;
+        }
+        span {
+            font-size: 50px
+        }
+        .vermelho {
+            background-color: red;
+        }
+        .azul{
+            background-color: blue;
+        }
+        .verde{
+            background-color: green;
+        }
+        #div0 {
+            border: solid red 3px;
+            padding: 100px;
+            margin: 20px;
+        }
+        .div1 {
+            border: solid red;
+            text-align: center;
+            margin-right: 350px;
+            margin-bottom: 10px;
+        }
+        .div2 {
+            border: solid white 3px;
+            text-align: center;
+            margin-right: 200px;
+            margin-bottom: 10px;
+            padding-right: 150px
+        }
+        .div3 {
+            border: solid blue 3px;
+            text-align: center;
+            margin-right: 50px;
+            margin-bottom: 10px;
+            padding-right: 300px;
+        }
+        .div4 {
+            border: solid green 3px;
+            text-align: center;
+            padding-right: 350px
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Para voltar, clique no botão a baixo.</h1>
+        <button>
+            <a href="exercicios.html">Voltar</a>
+        </button>
+    </div>
+    <!--Inline-->
+    <span class="vermelho">1</span> <span class="azul">2</span> <span class="verde">3</span>
+    <hr>
+
+    <div id="div0">
+        <div class="div1">
+            <h2>Usando BOX MODEL #1</h2>
+        </div>
+        <div class="div2">
+            <h3>Titulo seção #2</h3>
+        </div>
+        <div class="div3">
+            <h3>Titulo seção #3</h3>
+        </div>
+        <div class="div4">
+            <h3>Titulo seção #4</h3>
+        </div>
+    </div>
+</body>
+</html>
