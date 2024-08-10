@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        div {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: solid white 5px;
+            box-sizing: border-box;
+        }
+        .div2 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            border: solid white 5px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<header>
+    <span>
+        <button>
+            <a href="./exercicios.html">Voltar</a>
+        </button>
+    </span>
+    <hr>
+</header>
+<body>
+    <div>
+        border-box
+    </div>
+    <div class="div2">
+        content-box
+    </div>
+</body>
+</html>
