@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade exter e interna</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    .externa {
+        position: relative; 
+        background-color: orange;
+        height: 400px;
+        width: 400px;
+        padding: 50px;
+    }
+    .interna {
+        background-color: mediumvioletred;
+        height: 70%;
+        width: 70%;
+        position: static; /*Ocupa apenas o conteúdo não considera o padding*/
+        position: relative; /*Tem o mesmo comportamento do static*/
+        position: absolute; /*esta olhando para div extarna pra saber se ela é uma div relativa se ela for agora esta considerando o padding quando voce usa top,left..*/
+        position: fixed; /*considera o viewport*/
+        /* top: 0;
+        left: 0; */
+    }
+</style>
+<body>
+    <div class="externa">
+        <div class="interna"></div>
+    </div>
+</body>
+</html>
