@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+        body {
+            font-family: "Oswald", sans-serif;
+            background-color: silver;
+            margin: 0;
+        }
+
+        .cabecalho {
+            background-color: #333;
+            padding: 0px 10px;
+            height: 80px;
+            border-bottom: solid 5px cadetblue;
+            font-size: 1.4rem;
+            font-weight: 200;
+
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .menu {
+            flex-grow: 1;
+        }
+        .menu>ul{
+            list-style: none;
+            display: flex;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+            padding: 10px;
+        }
+        .menu a:hover {
+            background-color: cadetblue;
+            padding: 10px;
+        }
+        .botao {
+            text-decoration: none;
+            color: white;
+            background-color: #000;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 25px;
+        }
+        .destaque {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio"></a>
+            <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Curso</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botao-autenticacao">
+            <a class="botao" href="#">Entrar</a>
+            <a class="botao destaque" href="#">Cadastro</a>
+        </div>
+    </header>
+
+</body>
+
+</html>
